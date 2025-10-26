@@ -8,6 +8,10 @@
     padding: 0 138px;
 }
 
+body {
+    overflow: hidden;
+}
+
 @font-face {
     font-family: gil;
     src: url(./gilroy/Gilroy-Bold.ttf);
