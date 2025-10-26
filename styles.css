@@ -70,6 +70,10 @@ nav {
     display: none;
 }
 
+.burger {
+    display: none;
+}
+
 .burger_menu {
     display: none;
 }
@@ -505,6 +509,10 @@ footer ul li {
 
 @media (max-width: 768px) {
 
+    body {
+        overflow-x: hidden;
+    }
+
     .container {
         padding: 0 38px;
     }
@@ -529,8 +537,75 @@ footer ul li {
         display: none;
     }
 
+    .burger {
+        position: relative;
+        display: block;
+    }
+
+    .burger_press {
+        border-radius: 50%;
+        border: none;
+    }
+
     .burger_menu {
         display: block;
+    }
+
+   .burger_press:focus + .burger_nav {
+        left: -214px;
+    }
+
+    .burger_nav {
+        background-color: #5855E7;
+        width: 260px;
+        height: 500px;
+        position: absolute;
+        left: 50px;
+        top: -15px;
+        border-radius: 13px;
+        z-index: -1;
+        transition: .5s ease-in-out;
+        padding: 13px 19px;
+        z-index: 1000;
+    }
+
+    .x {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .x button {
+        border: none;
+        background-color: transparent;
+    }
+
+    .xbtn {
+        width: 17px !important;
+        height: 17px !important;
+    }
+
+    .x button:focus + .burger_nav {
+        left: 50px;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .burger_nav a {
+        text-decoration: none;
+        font-family: gil;
+        color: #fff;
+        font-size: 20px;
+    }
+
+    .burger_nav img{
+        width: 80px;
+        height: 57px;
     }
 
     .call_mobile {
@@ -549,7 +624,6 @@ footer ul li {
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
-        background: url(sdsds\ 3\ 1.svg);
         width: 100%;
     }
 
@@ -571,6 +645,8 @@ footer ul li {
 
     .right img {
         width: 100%;
+        z-index: -100;
+        position: relative;
     }
 
     .btns {
