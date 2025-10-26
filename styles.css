@@ -705,6 +705,10 @@ footer ul li {
         flex-direction: column;
     }
 
+    .footer__texts {
+        gap: 25px;
+    }
+
     .foot {
         display: flex;
         height: 100%;
