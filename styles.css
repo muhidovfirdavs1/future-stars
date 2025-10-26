@@ -553,6 +553,7 @@ footer ul li {
 
    .burger_press:focus + .burger_nav {
         left: -214px;
+        display: block;
     }
 
     .burger_nav {
@@ -567,6 +568,7 @@ footer ul li {
         transition: .5s ease-in-out;
         padding: 13px 19px;
         z-index: 1000;
+        display: none;
     }
 
     .x {
