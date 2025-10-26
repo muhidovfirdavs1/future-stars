@@ -177,7 +177,6 @@ main {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     background-color: #5855E7;
     padding: 75px 0;
 }
@@ -624,11 +623,12 @@ footer ul li {
     }
 
     .h1__shadow {
-        font-size: 72px;
+        font-size: 50px;
     }
 
     .h1 {
-        font-size: 32px;
+        font-size: 24px;
+        transform: translateY(-26px);
     }
 
     .card4 {
@@ -706,7 +706,8 @@ footer ul li {
     }
 
     .footer__texts {
-        gap: 25px;
+        gap: 20px;
+        flex-direction: column;
     }
 
     .foot {
